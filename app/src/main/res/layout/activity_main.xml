@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:gravity="center"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <EditText
+            android:id="@+id/txtedit_number1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/tv_operateur"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:layout_weight="1" />
+
+        <EditText
+            android:id="@+id/txtedit_number2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:layout_weight="1" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_calcute"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="computeAdd"
+            android:text="=" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_resualtat"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_quest1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="openquestion1"
+        android:padding="5dp"
+        android:text="Question1 du TD2" />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_quest2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Question2 du TD2"
+        android:onClick="openquestion2"
+        android:padding="5dp"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_quest3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Question4 du TD2"
+        android:onClick="openquestion4"
+        android:padding="5dp"/>
+
+
+
+
+
+</LinearLayout>
